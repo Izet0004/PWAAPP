@@ -41,14 +41,20 @@
   </header>
   <main class="noload">
     <div id="map">
-
+      <h1 id="debug"></h1>
     </div>
-      async defer></script>
+    async defer></script>
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEg4KVjKH6ujbsz_gj3UIEIGl8ztyDCJ0&callback=initMap" async defer></script> -->
 
   </main>
   <!-- <footer class="noload"></footer> -->
+  <script>
+    let a = document.getElementById("debug");
+    window.addEventListener('devicemotion', function (event) {
+      a.innerHTML(event.acceleration.x + ' m/s2');
 
+    });
+  </script>
   <!-- <script src="assets/js/load.js"></script> -->
   </script>
 
