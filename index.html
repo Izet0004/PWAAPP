@@ -49,11 +49,17 @@
   <!-- <footer class="noload"></footer> -->
   <script>
     let a = document.getElementById("debug");
-    window.addEventListener('devicemotion', function (event) {
-      console.log(event.acceleration.x + ' m/s2');
-      a.innerHTML = (event.acceleration.x + ' m/s2');
 
-    });
+    function handleMotionEvent(event) {
+
+      var x = event.accelerationIncludingGravity.x;
+      var y = event.accelerationIncludingGravity.y;
+      var z = event.accelerationIncludingGravity.z;
+
+      a.innerText = x;
+    }
+
+    window.addEventListener("devicemotion", handleMotionEvent, true);
   </script>
   <!-- <script src="assets/js/load.js"></script> -->
   </script>
