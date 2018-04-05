@@ -55,8 +55,13 @@
       var x = event.accelerationIncludingGravity.x;
       var y = event.accelerationIncludingGravity.y;
       var z = event.accelerationIncludingGravity.z;
-
-      a.innerHTML = x + "<br>" + y + "<br>" + z;
+      
+      if(x > 1){
+        a.innerHTML = "STOP SHAKING NIGGA";
+      } else {
+        a.innerHTML = "SHAKE ME NIGGA";
+      }
+      // a.innerHTML = x + "<br>" + y + "<br>" + z;
     }
 
     window.addEventListener("devicemotion", handleMotionEvent, true);
