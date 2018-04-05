@@ -56,7 +56,7 @@
       var y = event.accelerationIncludingGravity.y;
       var z = event.accelerationIncludingGravity.z;
 
-      a.innerText = x + "<br>" + y + "<br>" + z;
+      a.innerHTML = x + "<br>" + y + "<br>" + z;
     }
 
     window.addEventListener("devicemotion", handleMotionEvent, true);
