@@ -56,10 +56,10 @@
       var y = event.accelerationIncludingGravity.y;
       var z = event.accelerationIncludingGravity.z;
       
-      if(x > 1){
-        a.innerHTML = "STOP SHAKING NIGGA";
+      if(x > 0.7){
+        a.innerHTML = "STOP MOVING NIGGA";
       } else {
-        a.innerHTML = "SHAKE ME NIGGA";
+        a.innerHTML = "MOVE ME NIGGA";
       }
       // a.innerHTML = x + "<br>" + y + "<br>" + z;
     }
