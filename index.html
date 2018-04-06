@@ -123,12 +123,14 @@
   </main>
   <!-- <footer class="noload"></footer> -->
   <script>
-      if('serviceWorker' in navigator) {
-        navigator.serviceWorker
-                 .register('/assets/js/sw.js')
-                 .then(function() { console.log("Service Worker Registered"); });
-      }
-      </script>      
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+        .register('/assets/js/sw.js')
+        .then(function () {
+          console.log("Service Worker Registered");
+        });
+    }
+  </script>
   <!-- <script src="assets/js/main.js"></script> -->
   </script>
 
