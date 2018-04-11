@@ -18,17 +18,15 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/index.css">
   <link rel="manifest" href="manifest.json">
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
   <title>AalborgMap</title>
 </head>
 
 <body>
-  <!-- <div id="load">
-            xD xD xdd xdXDxfxdffxdfx
-            <h1>lgslgldsglsgls</h1>
-        </div> -->
-  <header class="noload">
+  <div class="loadScreen">
+      <img src="assets/img/LogoIzet.png" alt="logo">
+      <div class="loader"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+  </div>
+  <header class="content noload">
     <nav class="navGrid">
       <div>
         <img src="assets/img/LogoIzet.png" alt="logo" height="56px" width="56px">
@@ -39,7 +37,7 @@
       </div>
     </nav>
   </header>
-  <main class="noload">
+  <main class="content noload">
     <div id="map">
 
     </div>
@@ -121,7 +119,7 @@
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEg4KVjKH6ujbsz_gj3UIEIGl8ztyDCJ0&callback=initMap" async defer></script> -->
 
   </main>
-  <!-- <footer class="noload"></footer> -->
+  <!-- <footer class="content"></footer> -->
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker
@@ -131,7 +129,7 @@
         });
     }
   </script>
-  <!-- <script src="assets/js/main.js"></script> -->
+  <script src="assets/js/load.js"></script>
   </script>
 
 </body>
