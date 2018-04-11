@@ -160,29 +160,14 @@
   </main>
   <!-- <footer class="content"></footer> -->
   <script>
-    // if ('serviceWorker' in navigator) {
-    //   navigator.serviceWorker
-    //     .register('service-worker.js')
-    //     .then(function () {
-    //       console.log("Service Worker Registered");
-    //     });
-    // }
-    //This is the "Offline page" service worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+        .register('service-worker.js')
+        .then(function () {
+          console.log("Service Worker Registered");
+        });
+    }
 
-//This is the service worker with the Cache-first network
-
-//Add this below content to your HTML page, or add the js file to your page at the very top to register sercie worker
-if (navigator.serviceWorker.controller) {
-  console.log('[PWA Builder] active service worker found, no need to register')
-} else {
-
-//Register the ServiceWorker
-  navigator.serviceWorker.register('pwabuilder-sw.js', {
-    scope: './'
-  }).then(function(reg) {
-    console.log('Service workerSS has been registered for scope:'+ reg.scope);
-  });
-}
   </script>
   <script src="assets/js/load.js"></script>
   </script>
