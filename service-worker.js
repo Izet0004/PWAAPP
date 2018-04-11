@@ -5,8 +5,9 @@ self.addEventListener('install', function (event) {
             return cache.addAll(
                 [
                     '/assets/css/index.css',
-                    'assets/img/',
-                    '/index.html'
+                    '/assets/img/logoOrig.png',
+                    '/index.html',
+                    'service-worker.js'
                 ]
             );
         })
