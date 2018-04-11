@@ -110,6 +110,7 @@ main{
     border-radius: 100%;
     background-color: white;
     transform: scale(0.4);
+    margin-top: 30px;
 }
 
 .loader .dot:nth-child(1) {
